@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+<div class="container form">
+    <div class="card my-5">
+        <div class="card-body">
+            <form class="form-group">
+
+                <div class="alert alert-danger text-center lead my-3" *ngIf="error?.length > 0">{{error}}</div>
+
+                <input type="text" class="form-control my-2" placeholder="Enter firstName" name="firstName" required
+                    #firstName>
+                <input type="text" class="form-control my-2" placeholder="Enter lastName" name="lastName" required
+                    #lastName>
+                <input type="email" class="form-control my-2" placeholder="Enter email" name="email" required #email>
+                <input type="password" name="password" class="form-control my-2" placeholder="Enter password" required
+                    #password>
+                <input type="text" name="image" placeholder="Enter Image (optional)" class="form-control my-2" required
+                    #image>
+
+                <button type="submit"
+                    (click)="signup(firstName.value, lastName.value, email.value, password.value, image.value)"
+                    class="btn btn-primary btn-block">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="text-center">
+        I have already an account <a routerLink="/signin" class="btn btn-light btn-sm">Login</a>
+    </div>
+
+</div>

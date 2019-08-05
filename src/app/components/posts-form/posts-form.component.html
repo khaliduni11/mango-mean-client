@@ -1,0 +1,11 @@
+<form class="form-group">
+    <textarea name="post" [(ngModel)]="currentPost.post" class="form-control" placeholder="Enter post" cols="3" rows="4"
+        #post></textarea>
+    <input type="text" name="image" [(ngModel)]="currentPost.image" class="form-control my-2" placeholder="Enter image"
+        #image>
+    <input type="text" hidden name="_id" [(ngModel)]="currentPost._id">
+    <button *ngIf="!isEdit" class="btn btn-block btn-primary" (click)="addPost(post.value, image.value)">Add
+        Post</button>
+    <button *ngIf="isEdit" class="btn btn-block btn-warning" (click)="updatePost()">Edit
+        Post</button>
+</form>

@@ -1,0 +1,41 @@
+[debug] [2019-08-04T08:31:14.499Z] ----------------------------------------------------------------------
+[debug] [2019-08-04T08:31:14.503Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\khalid\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2019-08-04T08:31:14.504Z] CLI Version:   7.2.2
+[debug] [2019-08-04T08:31:14.504Z] Platform:      win32
+[debug] [2019-08-04T08:31:14.504Z] Node Version:  v10.13.0
+[debug] [2019-08-04T08:31:14.507Z] Time:          Sun Aug 04 2019 11:31:14 GMT+0300 (East Africa Time)
+[debug] [2019-08-04T08:31:14.507Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-04T08:31:14.523Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-04T08:31:14.523Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\khalid\Desktop\Mean stack Mango App\Angular
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2019-08-04T08:31:22.008Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?page_size=100  
+ 
+[debug] [2019-08-04T08:31:23.312Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-04T09:09:45.840Z] Error: kill ENOSYS
+    at process.kill (internal/process/per_thread.js:198:13)
+    at process.listener (C:\Users\khalid\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at process.emit (events.js:182:13)
+[error] 
+[error] Error: An unexpected error has occurred.

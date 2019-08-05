@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+<div class="container form">
+    <div class="card my-5">
+        <div class="card-body">
+            <div class="alert alert-danger text-center lead my-3" *ngIf="error?.length > 0">{{error}}</div>
+            <form class="form-group">
+                <input type="email" class="form-control my-2" placeholder="Enter email" name="email" #email required>
+                <input type="password" name="password" class="form-control my-2" placeholder="Enter password" #password
+                    required>
+                <button href="/signin" (click)="signin(email.value, password.value)" type="submit"
+                    class="btn btn-primary btn-block">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="text-center col-md-6 col-sm-12">
+            Create an account <a routerLink="/signup" class="btn btn-light btn-sm">SignUp</a>
+        </div>
+        <div class="text-center col-md-6 col-sm-12">
+            <a routerLink="/forget_password" class="btn btn-light btn-sm">Forget Password</a>
+        </div>
+    </div>
+    
+
+</div>

@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+
+
+<div class="container">
+    <div class="alert alert-warning my-5 text-center">Go to your gmail and verify it</div>
+
+    <div class="alert alert-danger text-center my-3" *ngIf="error?.length > 0">{{error}}</div>
+    <div class="alert alert-warning text-center my-3" *ngIf="feedback?.length > 0">{{feedback}}</div>
+    <form class="form-group my-5" >
+        <input type="email" class="form-control" [disabled]="!verifyDisable" name="email" placeholder="Enter you email" required #email>
+        <button class="btn btn-primary btn-block my-3" [disabled]="!verifyDisable" (click)="resend(email.value)">resend</button>
+
+        <p class="text-center my-2"><small>If you don't get email in 30sec then resend the verification code and this form will enable in 30sec</small></p>
+    </form>
+</div>
